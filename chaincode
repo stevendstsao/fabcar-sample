@@ -97,16 +97,16 @@ func (s *SmartContract) queryCar(APIstub shim.ChaincodeStubInterface, args []str
 
 func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Response {
 	cars := []Car{
-		Car{Make: "Toyota", Model: "Prius", Colour: "blue", Owner: "Tomoko"},
-		Car{Make: "Ford", Model: "Mustang", Colour: "red", Owner: "Brad"},
-		Car{Make: "Hyundai", Model: "Tucson", Colour: "green", Owner: "Jin Soo"},
-		Car{Make: "Volkswagen", Model: "Passat", Colour: "yellow", Owner: "Max"},
-		Car{Make: "Tesla", Model: "S", Colour: "black", Owner: "Adriana"},
-		Car{Make: "Peugeot", Model: "205", Colour: "purple", Owner: "Michel"},
-		Car{Make: "Chery", Model: "S22L", Colour: "white", Owner: "Aarav"},
-		Car{Make: "Fiat", Model: "Punto", Colour: "violet", Owner: "Pari"},
-		Car{Make: "Tata", Model: "Nano", Colour: "indigo", Owner: "Valeria"},
-		Car{Make: "Holden", Model: "Barina", Colour: "brown", Owner: "Shotaro"},
+		Car{Make: "Toyota", Model: "Prius", Colour: "blue", Owner: "Tomoko", price: "1000"},
+		Car{Make: "Ford", Model: "Mustang", Colour: "red", Owner: "Brad",price: "1000"},
+		Car{Make: "Hyundai", Model: "Tucson", Colour: "green", Owner: "Jin Soo",price: "1000"},
+		Car{Make: "Volkswagen", Model: "Passat", Colour: "yellow", Owner: "Max",price: "1000"},
+		Car{Make: "Tesla", Model: "S", Colour: "black", Owner: "Adriana",price: "1000"},
+		Car{Make: "Peugeot", Model: "205", Colour: "purple", Owner: "Michel",price: "1000"},
+		Car{Make: "Chery", Model: "S22L", Colour: "white", Owner: "Aarav",price: "1000"},
+		Car{Make: "Fiat", Model: "Punto", Colour: "violet", Owner: "Pari",price: "1000"},
+		Car{Make: "Tata", Model: "Nano", Colour: "indigo", Owner: "Valeria",price: "1000"},
+		Car{Make: "Holden", Model: "Barina", Colour: "brown", Owner: "Shotaro",price: "1000"},
 	}
 
 	i := 0
